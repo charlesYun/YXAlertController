@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		29E862578BB3D726141BAD95FDCC676F /* YXAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D12979A1498C79465A71641F6085C57 /* YXAlertController.m */; };
+		4B54F1C3ADB66D8C684E569AD2046271 /* YXAlertController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E4461AF891CBC27BDE33754BFFDEAAF /* YXAlertController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E0DA98B1B64BEA4884A5C67D4BDD281 /* YXAlertController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E486A7D5C006870F9305E5154179AB73 /* YXAlertController-dummy.m */; };
+		61A637761A5B48B58D5A1D5ABD64DB4A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		D5829F1F2933E81F4EC00ABEC93B2B00 /* Pods-YXAlertControllerDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6802CEA56869E9382E605A67EBF1813A /* Pods-YXAlertControllerDemo-dummy.m */; };
+		DAC0E32557202441BDCDBC081337D3B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B8B1A2D52A52CF5A0B5AA994F73DD023 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5ADB2610A44D9645087102FCF2565A63;
+			remoteInfo = YXAlertController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C45D796C229E2F539BBE9BC02E02969 /* libPods-YXAlertControllerDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-YXAlertControllerDemo.a"; path = "libPods-YXAlertControllerDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1234A09BF9B31E4E14084316D6F8F3AA /* Pods-YXAlertControllerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YXAlertControllerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		1F64DDE6676654147FB2F6B3B133F84F /* YXAlertController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YXAlertController.xcconfig; sourceTree = "<group>"; };
+		27BE704EA319DEEBB0374FFF4C5AADAF /* libYXAlertController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libYXAlertController.a; path = libYXAlertController.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E4461AF891CBC27BDE33754BFFDEAAF /* YXAlertController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YXAlertController.h; path = YXAlertController/YXAlertController.h; sourceTree = "<group>"; };
+		5CE002B86AD24FE44C473C9FA72EDD20 /* Pods-YXAlertControllerDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YXAlertControllerDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5DCB47DB0111E96D3E551035A0EA013C /* Pods-YXAlertControllerDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YXAlertControllerDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		6802CEA56869E9382E605A67EBF1813A /* Pods-YXAlertControllerDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YXAlertControllerDemo-dummy.m"; sourceTree = "<group>"; };
+		8C3D24B9C6ECA7BDE95C2E4EAE4E3BF4 /* Pods-YXAlertControllerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YXAlertControllerDemo.release.xcconfig"; sourceTree = "<group>"; };
+		8D12979A1498C79465A71641F6085C57 /* YXAlertController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YXAlertController.m; path = YXAlertController/YXAlertController.m; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B3B1FEC4B435AB4546CC567EA21D0BB3 /* Pods-YXAlertControllerDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YXAlertControllerDemo-frameworks.sh"; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CD2BE21A52A63568B6E2B58A40BBADD5 /* Pods-YXAlertControllerDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YXAlertControllerDemo-resources.sh"; sourceTree = "<group>"; };
+		D52457CC9EE5DF3823BC4C8E97DB039E /* YXAlertController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YXAlertController-prefix.pch"; sourceTree = "<group>"; };
+		E486A7D5C006870F9305E5154179AB73 /* YXAlertController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YXAlertController-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		849C25C1010517A71B97869DDA9AA951 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61A637761A5B48B58D5A1D5ABD64DB4A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0CD1A187BAD8025F0381001B1F968CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAC0E32557202441BDCDBC081337D3B2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0488D8E4A12402CB1FA73822719184A3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1F64DDE6676654147FB2F6B3B133F84F /* YXAlertController.xcconfig */,
+				E486A7D5C006870F9305E5154179AB73 /* YXAlertController-dummy.m */,
+				D52457CC9EE5DF3823BC4C8E97DB039E /* YXAlertController-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/YXAlertController";
+			sourceTree = "<group>";
+		};
+		0A37F2108D5968872C151451000B2E48 /* YXAlertController */ = {
+			isa = PBXGroup;
+			children = (
+				4E4461AF891CBC27BDE33754BFFDEAAF /* YXAlertController.h */,
+				8D12979A1498C79465A71641F6085C57 /* YXAlertController.m */,
+				0488D8E4A12402CB1FA73822719184A3 /* Support Files */,
+			);
+			name = YXAlertController;
+			path = YXAlertController;
+			sourceTree = "<group>";
+		};
+		2B55E63F619C21B2CD340837E2C27C3B /* Pods-YXAlertControllerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				5CE002B86AD24FE44C473C9FA72EDD20 /* Pods-YXAlertControllerDemo-acknowledgements.markdown */,
+				5DCB47DB0111E96D3E551035A0EA013C /* Pods-YXAlertControllerDemo-acknowledgements.plist */,
+				6802CEA56869E9382E605A67EBF1813A /* Pods-YXAlertControllerDemo-dummy.m */,
+				B3B1FEC4B435AB4546CC567EA21D0BB3 /* Pods-YXAlertControllerDemo-frameworks.sh */,
+				CD2BE21A52A63568B6E2B58A40BBADD5 /* Pods-YXAlertControllerDemo-resources.sh */,
+				1234A09BF9B31E4E14084316D6F8F3AA /* Pods-YXAlertControllerDemo.debug.xcconfig */,
+				8C3D24B9C6ECA7BDE95C2E4EAE4E3BF4 /* Pods-YXAlertControllerDemo.release.xcconfig */,
+			);
+			name = "Pods-YXAlertControllerDemo";
+			path = "Target Support Files/Pods-YXAlertControllerDemo";
+			sourceTree = "<group>";
+		};
+		4D63C8B37D183E757C728BCA3A844D75 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2B55E63F619C21B2CD340837E2C27C3B /* Pods-YXAlertControllerDemo */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				8A20ACA3F50376FF933EEDAB6536FBB2 /* Pods */,
+				A2EB913DD8397602B76ED2A23D94B017 /* Products */,
+				4D63C8B37D183E757C728BCA3A844D75 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8A20ACA3F50376FF933EEDAB6536FBB2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0A37F2108D5968872C151451000B2E48 /* YXAlertController */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A2EB913DD8397602B76ED2A23D94B017 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0C45D796C229E2F539BBE9BC02E02969 /* libPods-YXAlertControllerDemo.a */,
+				27BE704EA319DEEBB0374FFF4C5AADAF /* libYXAlertController.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		90CB776A3989CA087AA77385FA03E984 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B54F1C3ADB66D8C684E569AD2046271 /* YXAlertController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		182F06678FCDA606335FBB97B102330F /* Pods-YXAlertControllerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EB0221FD0443F99ED28FB098056ABA5 /* Build configuration list for PBXNativeTarget "Pods-YXAlertControllerDemo" */;
+			buildPhases = (
+				7167B921CF124EECD1B7CA55FC3E28E8 /* Sources */,
+				849C25C1010517A71B97869DDA9AA951 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1080D7DDAFC6A98CA0045BC3D66A454 /* PBXTargetDependency */,
+			);
+			name = "Pods-YXAlertControllerDemo";
+			productName = "Pods-YXAlertControllerDemo";
+			productReference = 0C45D796C229E2F539BBE9BC02E02969 /* libPods-YXAlertControllerDemo.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		5ADB2610A44D9645087102FCF2565A63 /* YXAlertController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 557E0EFF5642AF0E5A80D2FC530834C4 /* Build configuration list for PBXNativeTarget "YXAlertController" */;
+			buildPhases = (
+				FEC7DBEBB99B7A1D8B114EAA446E94DD /* Sources */,
+				C0CD1A187BAD8025F0381001B1F968CF /* Frameworks */,
+				90CB776A3989CA087AA77385FA03E984 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YXAlertController;
+			productName = YXAlertController;
+			productReference = 27BE704EA319DEEBB0374FFF4C5AADAF /* libYXAlertController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = A2EB913DD8397602B76ED2A23D94B017 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				182F06678FCDA606335FBB97B102330F /* Pods-YXAlertControllerDemo */,
+				5ADB2610A44D9645087102FCF2565A63 /* YXAlertController */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7167B921CF124EECD1B7CA55FC3E28E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5829F1F2933E81F4EC00ABEC93B2B00 /* Pods-YXAlertControllerDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEC7DBEBB99B7A1D8B114EAA446E94DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E0DA98B1B64BEA4884A5C67D4BDD281 /* YXAlertController-dummy.m in Sources */,
+				29E862578BB3D726141BAD95FDCC676F /* YXAlertController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F1080D7DDAFC6A98CA0045BC3D66A454 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YXAlertController;
+			target = 5ADB2610A44D9645087102FCF2565A63 /* YXAlertController */;
+			targetProxy = B8B1A2D52A52CF5A0B5AA994F73DD023 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		015A368F878AC3E2CEAE21DDE8026304 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		1813A8A2F291068AE1F8E3AA7D01614C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1234A09BF9B31E4E14084316D6F8F3AA /* Pods-YXAlertControllerDemo.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		2CB86D702B6DB2220BC34B9B3B579BE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F64DDE6676654147FB2F6B3B133F84F /* YXAlertController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/YXAlertController/YXAlertController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		44CDBB6D11DE06DB64D6268622BDC47E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		70DF1BAD8A4E42287CE8B27213A1600C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C3D24B9C6ECA7BDE95C2E4EAE4E3BF4 /* Pods-YXAlertControllerDemo.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		CE7B04208E527835319FBDEAC6F7D29A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F64DDE6676654147FB2F6B3B133F84F /* YXAlertController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/YXAlertController/YXAlertController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				015A368F878AC3E2CEAE21DDE8026304 /* Debug */,
+				44CDBB6D11DE06DB64D6268622BDC47E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		557E0EFF5642AF0E5A80D2FC530834C4 /* Build configuration list for PBXNativeTarget "YXAlertController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CB86D702B6DB2220BC34B9B3B579BE3 /* Debug */,
+				CE7B04208E527835319FBDEAC6F7D29A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6EB0221FD0443F99ED28FB098056ABA5 /* Build configuration list for PBXNativeTarget "Pods-YXAlertControllerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1813A8A2F291068AE1F8E3AA7D01614C /* Debug */,
+				70DF1BAD8A4E42287CE8B27213A1600C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
