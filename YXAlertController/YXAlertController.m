@@ -21,7 +21,7 @@ UIAlertController *BaseAlert(NSString *title,NSString *message,UIAlertController
 
 /**
  默认提示选择框
-
+ 
  @param viewController 控制器对象
  @param title          提示标题
  @param message        提示说明
@@ -33,10 +33,14 @@ void ShowDefaultAlertView(UIViewController *viewController,NSString *title,NSStr
     
     UIAlertController *alert = BaseAlert(title, message, style);
     [alert addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
-        canceled();
+        if (canceled) {
+            canceled();
+        }
     }]];
     [alert addAction:[UIAlertAction actionWithTitle:@"确认" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        completed();
+        if (completed) {
+            completed();
+        }
     }]];
     [viewController presentViewController:alert animated:YES completion:nil];
 }
@@ -44,7 +48,7 @@ void ShowDefaultAlertView(UIViewController *viewController,NSString *title,NSStr
 
 /**
  提示选择框
-
+ 
  @param viewController 控制器对象
  @param title          提示标题
  @param message        提示说明
@@ -58,10 +62,14 @@ void ShowAlertView(UIViewController *viewController,NSString *title,NSString *me
     
     UIAlertController *alert = BaseAlert(title, message, style);
     [alert addAction:[UIAlertAction actionWithTitle:cancelTitle style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
-        canceled();
+        if (canceled) {
+            canceled();
+        }
     }]];
     [alert addAction:[UIAlertAction actionWithTitle:DefaultTitle style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        completed();
+        if (completed) {
+            completed();
+        };
     }]];
     [viewController presentViewController:alert animated:YES completion:nil];
 }
