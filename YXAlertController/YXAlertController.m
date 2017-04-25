@@ -14,7 +14,7 @@
 
 /**
  初始化base
-
+ 
  @param title          提示标题
  @param message        提示说明
  @param style          风格
@@ -29,7 +29,7 @@ UIAlertController *BaseAlert(NSString *title,NSString *message,UIAlertController
 
 /**
  默认提示选择框
-
+ 
  @param title          提示标题
  @param message        提示说明
  @param style          风格
@@ -55,7 +55,7 @@ void ShowDefaultAlertView(NSString *title,NSString *message,UIAlertControllerSty
 
 /**
  提示选择框
-
+ 
  @param title          提示标题
  @param message        提示说明
  @param cancelTitle    取消按钮
@@ -67,16 +67,21 @@ void ShowDefaultAlertView(NSString *title,NSString *message,UIAlertControllerSty
 void ShowAlertView(NSString *title,NSString *message,NSString *cancelTitle,NSString *DefaultTitle,UIAlertControllerStyle style,void(^completed)(),void(^canceled)()) {
     
     UIAlertController *alert = BaseAlert(title, message, style);
-    [alert addAction:[UIAlertAction actionWithTitle:cancelTitle style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
-        if (canceled) {
-            canceled();
-        }
-    }]];
-    [alert addAction:[UIAlertAction actionWithTitle:DefaultTitle style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        if (completed) {
-            completed();
-        }
-    }]];
+    if (cancelTitle) {
+        [alert addAction:[UIAlertAction actionWithTitle:cancelTitle style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
+            if (canceled) {
+                canceled();
+            }
+        }]];
+    }
+    if (DefaultTitle) {
+        [alert addAction:[UIAlertAction actionWithTitle:DefaultTitle style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            if (completed) {
+                completed();
+            }
+        }]];
+    }
+    
     [AppRootViewController() presentViewController:alert animated:YES completion:nil];
 }
 
@@ -84,7 +89,7 @@ void ShowAlertView(NSString *title,NSString *message,NSString *cancelTitle,NSStr
 
 /**
  自动获取app最顶层控制器
-
+ 
  @return UIViewController
  */
 UIViewController *AppRootViewController() {
