@@ -34,7 +34,11 @@
     
     ShowDefaultAlertView(@"提示", @"sssnininin", UIAlertControllerStyleAlert, nil, nil);
     
-    
+    ShowAlertView(@"提示", @"你好，欢迎使用YXAlertController", @"取消", @"确认", UIAlertControllerStyleAlert, ^{
+        
+    }, ^{
+        
+    });
     
     
     
