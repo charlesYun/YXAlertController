@@ -9,20 +9,10 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>YXAlertController.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>182F06678FCDA606335FBB97B102330F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>5ADB2610A44D9645087102FCF2565A63</key>
+		<key>B6F23C75A0A32BB004A98DFC64372AAA</key>
 		<dict>
 			<key>primary</key>
 			<true/>

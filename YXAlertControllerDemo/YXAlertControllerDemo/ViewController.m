@@ -30,20 +30,9 @@
 
 - (IBAction)clickAction:(UIButton *)sender {
     
-//    ShowDefaultAlertView(self, @"提示", @"你好吗", UIAlertControllerStyleAlert, ^{
-//        
-//        NSLog(@"成功");
-//    }, ^{
-//        NSLog(@"取消");
-//    });
     
-    ShowAlertView(self, @"提示", @"还好吗", @"滚蛋", @"过来", 1, ^{
-        
-        
-        NSLog(@"成功");
-    }, ^{
-        NSLog(@"取消");
-    });
+    
+    ShowDefaultAlertView(@"提示", @"sssnininin", UIAlertControllerStyleAlert, nil, nil);
     
     
     

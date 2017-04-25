@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		295F0C4B1EAEE3490012326B /* YXAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 295F0C4A1EAEE3490012326B /* YXAlertController.m */; };
 		29CD16B31E52ED4A00163796 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29CD16B21E52ED4A00163796 /* main.m */; };
 		29CD16B61E52ED4A00163796 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 29CD16B51E52ED4A00163796 /* AppDelegate.m */; };
 		29CD16B91E52ED4A00163796 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29CD16B81E52ED4A00163796 /* ViewController.m */; };
@@ -20,6 +21,8 @@
 /* Begin PBXFileReference section */
 		119E878C0AD8DE9CE539293E /* Pods-YXAlertControllerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YXAlertControllerDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-YXAlertControllerDemo/Pods-YXAlertControllerDemo.release.xcconfig"; sourceTree = "<group>"; };
 		2623A7F2101F6F84EA249CBA /* libPods-YXAlertControllerDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YXAlertControllerDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		295F0C491EAEE3490012326B /* YXAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXAlertController.h; sourceTree = "<group>"; };
+		295F0C4A1EAEE3490012326B /* YXAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXAlertController.m; sourceTree = "<group>"; };
 		29CD16AE1E52ED4A00163796 /* YXAlertControllerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YXAlertControllerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29CD16B21E52ED4A00163796 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29CD16B41E52ED4A00163796 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -30,7 +33,7 @@
 		29CD16BD1E52ED4A00163796 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29CD16C01E52ED4A00163796 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		29CD16C21E52ED4A00163796 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		29E5B9221E5BE383008CB155 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		29E5B9221E5BE383008CB155 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		E8C48B9752B7AC8E70E0DF10 /* Pods-YXAlertControllerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YXAlertControllerDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YXAlertControllerDemo/Pods-YXAlertControllerDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,6 +83,8 @@
 				29CD16B51E52ED4A00163796 /* AppDelegate.m */,
 				29CD16B71E52ED4A00163796 /* ViewController.h */,
 				29CD16B81E52ED4A00163796 /* ViewController.m */,
+				295F0C491EAEE3490012326B /* YXAlertController.h */,
+				295F0C4A1EAEE3490012326B /* YXAlertController.m */,
 				29CD16BA1E52ED4A00163796 /* Main.storyboard */,
 				29CD16BD1E52ED4A00163796 /* Assets.xcassets */,
 				29CD16BF1E52ED4A00163796 /* LaunchScreen.storyboard */,
@@ -233,6 +238,7 @@
 				29CD16B91E52ED4A00163796 /* ViewController.m in Sources */,
 				29CD16B61E52ED4A00163796 /* AppDelegate.m in Sources */,
 				29CD16B31E52ED4A00163796 /* main.m in Sources */,
+				295F0C4B1EAEE3490012326B /* YXAlertController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
