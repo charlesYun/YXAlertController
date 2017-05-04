@@ -34,7 +34,7 @@ UIAlertController *BaseAlert(NSString *title,NSString *message,UIAlertController
  @param message        提示说明
  @param menuArray      菜单title Array
  @param style          风格
- @param ^completed     完成回调
+ @param completed      完成回调
  */
 void ShowAlertView(NSString *title,NSString *message,NSArray *menuArray,UIAlertControllerStyle style,void(^completed)(NSInteger index)) {
     
