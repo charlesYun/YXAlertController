@@ -22,34 +22,8 @@
  */
 UIAlertController *BaseAlert(NSString *title,NSString *message,UIAlertControllerStyle style) {
     
-    UIAlertController *alertContr = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertController *alertContr = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:style];
     return alertContr;
-}
-
-
-/**
- 默认提示选择框
- 
- @param title          提示标题
- @param message        提示说明
- @param style          风格
- @param completed      确定回调
- @param canceled       取消回调
- */
-void ShowDefaultAlertView(NSString *title,NSString *message,UIAlertControllerStyle style,void(^completed)(),void(^canceled)()) {
-    
-    UIAlertController *alert = BaseAlert(title, message, style);
-    [alert addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
-        if (canceled) {
-            canceled();
-        }
-    }]];
-    [alert addAction:[UIAlertAction actionWithTitle:@"确认" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        if (completed) {
-            completed();
-        }
-    }]];
-    [AppRootViewController() presentViewController:alert animated:YES completion:nil];
 }
 
 
@@ -58,30 +32,29 @@ void ShowDefaultAlertView(NSString *title,NSString *message,UIAlertControllerSty
  
  @param title          提示标题
  @param message        提示说明
- @param cancelTitle    取消按钮
- @param DefaultTitle   确认按钮
+ @param menuArray      菜单title Array
  @param style          风格
- @param completed      确定回调
- @param canceled       取消回调
+ @param ^completed     完成回调
  */
-void ShowAlertView(NSString *title,NSString *message,NSString *cancelTitle,NSString *DefaultTitle,UIAlertControllerStyle style,void(^completed)(),void(^canceled)()) {
+void ShowAlertView(NSString *title,NSString *message,NSArray *menuArray,UIAlertControllerStyle style,void(^completed)(NSInteger index)) {
     
     UIAlertController *alert = BaseAlert(title, message, style);
-    if (cancelTitle) {
-        [alert addAction:[UIAlertAction actionWithTitle:cancelTitle style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
-            if (canceled) {
-                canceled();
-            }
-        }]];
+    for (int i=0; i<menuArray.count; i++) {
+        NSString *menuTitle = menuArray[i];
+        if (i == menuArray.count - 1) {
+            [alert addAction:[UIAlertAction actionWithTitle:menuTitle style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+                if (completed) {
+                    completed([menuArray indexOfObject:action.title]);
+                }
+            }]];
+        }else {
+            [alert addAction:[UIAlertAction actionWithTitle:menuTitle style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                if (completed) {
+                    completed([menuArray indexOfObject:action.title]);
+                }
+            }]];
+        }
     }
-    if (DefaultTitle) {
-        [alert addAction:[UIAlertAction actionWithTitle:DefaultTitle style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-            if (completed) {
-                completed();
-            }
-        }]];
-    }
-    
     [AppRootViewController() presentViewController:alert animated:YES completion:nil];
 }
 
