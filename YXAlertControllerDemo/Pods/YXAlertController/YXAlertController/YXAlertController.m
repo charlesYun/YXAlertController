@@ -42,7 +42,7 @@ void ShowAlertView(NSString *title,NSString *message,NSArray *menuArray,UIAlertC
     for (int i=0; i<menuArray.count; i++) {
         NSString *menuTitle = menuArray[i];
         if (i == menuArray.count - 1) {
-            [alert addAction:[UIAlertAction actionWithTitle:menuTitle style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
+            [alert addAction:[UIAlertAction actionWithTitle:menuTitle style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
                 if (completed) {
                     completed([menuArray indexOfObject:action.title]);
                 }
