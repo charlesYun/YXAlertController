@@ -42,7 +42,7 @@ void ShowAlertView(NSString *title,NSString *message,NSArray *menuArray,UIAlertC
     for (int i=0; i<menuArray.count; i++) {
         NSString *menuTitle = menuArray[i];
         if (i == menuArray.count - 1) {
-            [alert addAction:[UIAlertAction actionWithTitle:menuTitle style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
+            [alert addAction:[UIAlertAction actionWithTitle:menuTitle style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
                 if (completed) {
                     completed([menuArray indexOfObject:action.title]);
                 }
@@ -51,6 +51,44 @@ void ShowAlertView(NSString *title,NSString *message,NSArray *menuArray,UIAlertC
             [alert addAction:[UIAlertAction actionWithTitle:menuTitle style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
                 if (completed) {
                     completed([menuArray indexOfObject:action.title]);
+                }
+            }]];
+        }
+    }
+    [AppRootViewController() presentViewController:alert animated:YES completion:nil];
+}
+
+
+/**
+ 输入框
+ 
+ @param title            提示标题
+ @param message          提示说明
+ @param menuArray        菜单title Array
+ @param placeholderArray 输入框占位符 Array
+ @param completed        完成回调
+ */
+void ShowTextFieldAlertView(NSString *title,NSString *message,NSArray *menuArray,NSArray *placeholderArray,void(^completed)(NSInteger index,NSArray <UITextField *>*inputArray)) {
+    
+    UIAlertController *alert = BaseAlert(title, message, UIAlertControllerStyleAlert);
+    for (int i=0; i<placeholderArray.count; i++) {
+        NSString *placeholder = placeholderArray[i];
+        [alert addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
+            textField.placeholder = placeholder;
+        }];
+    }
+    for (int i=0; i<menuArray.count; i++) {
+        NSString *menuTitle = menuArray[i];
+        if (i == placeholderArray.count - 1) {
+            [alert addAction:[UIAlertAction actionWithTitle:menuTitle style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+                if (completed) {
+                    completed([menuArray indexOfObject:action.title],alert.textFields);
+                }
+            }]];
+        }else {
+            [alert addAction:[UIAlertAction actionWithTitle:menuTitle style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                if (completed) {
+                    completed([menuArray indexOfObject:action.title],alert.textFields);
                 }
             }]];
         }

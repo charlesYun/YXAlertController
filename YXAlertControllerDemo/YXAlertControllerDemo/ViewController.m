@@ -32,12 +32,17 @@
     
     
     
-    ShowDefaultAlertView(@"提示", @"sssnininin", UIAlertControllerStyleAlert, nil, nil);
+//    ShowDefaultAlertView(@"提示", @"sssnininin", UIAlertControllerStyleAlert, nil, nil);
+//    
+//    ShowAlertView(@"提示", @"你好，欢迎使用YXAlertController", @"取消", @"确认", UIAlertControllerStyleAlert, ^{
+//        
+//    }, ^{
+//        
+//    });
     
-    ShowAlertView(@"提示", @"你好，欢迎使用YXAlertController", @"取消", @"确认", UIAlertControllerStyleAlert, ^{
-        
-    }, ^{
-        
+    ShowTextFieldAlertView(@"提示", @"测试", @[@"确认"], @[@"请输入"], ^(NSInteger index, NSArray<UITextField *> *inputArray) {
+        UITextField *textfield = inputArray.firstObject;
+        NSLog(@"%@",textfield.text);
     });
     
     
@@ -45,5 +50,22 @@
     
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @end

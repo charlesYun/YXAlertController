@@ -27,4 +27,15 @@
 extern void ShowAlertView(NSString *title,NSString *message,NSArray *menuArray,UIAlertControllerStyle style,void(^completed)(NSInteger index));
 
 
+/**
+ 输入框
+ 
+ @param title            提示标题
+ @param message          提示说明
+ @param menuArray        菜单title Array
+ @param placeholderArray 输入框占位符 Array
+ @param completed        完成回调
+ */
+extern void ShowTextFieldAlertView(NSString *title,NSString *message,NSArray *menuArray,NSArray *placeholderArray,void(^completed)(NSInteger index,NSArray <UITextField *>*inputArray));
+
 @end
