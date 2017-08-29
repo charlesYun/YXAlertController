@@ -140,7 +140,7 @@
 				TargetAttributes = {
 					29CD16AD1E52ED4A00163796 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 6VMCD64Z88;
+						DevelopmentTeam = 2G3393EZPN;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -353,7 +353,7 @@
 			baseConfigurationReference = E8C48B9752B7AC8E70E0DF10 /* Pods-YXAlertControllerDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6VMCD64Z88;
+				DEVELOPMENT_TEAM = 2G3393EZPN;
 				INFOPLIST_FILE = YXAlertControllerDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -367,7 +367,7 @@
 			baseConfigurationReference = 119E878C0AD8DE9CE539293E /* Pods-YXAlertControllerDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6VMCD64Z88;
+				DEVELOPMENT_TEAM = 2G3393EZPN;
 				INFOPLIST_FILE = YXAlertControllerDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

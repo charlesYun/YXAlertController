@@ -39,9 +39,9 @@ UIAlertController *BaseAlert(NSString *title,NSString *message,UIAlertController
 void ShowAlertView(NSString *title,NSString *message,NSArray *menuArray,UIAlertControllerStyle style,void(^completed)(NSInteger index)) {
     
     UIAlertController *alert = BaseAlert(title, message, style);
-    for (int i=0; i<menuArray.count; i++) {
+    for (NSInteger i = menuArray.count - 1; i >= 0; i --) {
         NSString *menuTitle = menuArray[i];
-        if (i == menuArray.count - 1) {
+        if (i == 0) {
             [alert addAction:[UIAlertAction actionWithTitle:menuTitle style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
                 if (completed) {
                     completed([menuArray indexOfObject:action.title]);

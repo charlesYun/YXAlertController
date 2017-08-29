@@ -32,18 +32,14 @@
     
     
     
-//    ShowDefaultAlertView(@"提示", @"sssnininin", UIAlertControllerStyleAlert, nil, nil);
-//    
-//    ShowAlertView(@"提示", @"你好，欢迎使用YXAlertController", @"取消", @"确认", UIAlertControllerStyleAlert, ^{
-//        
-//    }, ^{
-//        
-//    });
-    
-    ShowTextFieldAlertView(@"提示", @"测试", @[@"确认"], @[@"请输入"], ^(NSInteger index, NSArray<UITextField *> *inputArray) {
-        UITextField *textfield = inputArray.firstObject;
-        NSLog(@"%@",textfield.text);
+    ShowAlertView(@"相机权限未开启", @"相机权限未开启，请进入系统【设置】>【隐私】>【相机】中打开开关,开启相机功能", @[@"取消",@"立即开启"], UIAlertControllerStyleAlert, ^(NSInteger index) {
+ 
     });
+    
+//    ShowTextFieldAlertView(@"提示", @"测试", @[@"取消",@"确认"], @[@"请输入"], ^(NSInteger index, NSArray<UITextField *> *inputArray) {
+//        UITextField *textfield = inputArray.firstObject;
+//        NSLog(@"%@",textfield.text);
+//    });
     
     
     
