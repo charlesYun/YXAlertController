@@ -1,7 +1,7 @@
 # 欢迎使用 YXAlertController
 
 ------
-> *   pod 'YXAlertController', '~> 1.0.2’
+> *   pod 'YXAlertController', '~> 1.1.0’
 
 
 ShowAlertView(@"提示", @"你好，欢迎使用YXAlertController", @"取消", @"确认", UIAlertControllerStyleAlert, ^{
