@@ -9,33 +9,28 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-
-
-
-
 @interface YXAlertController : UIAlertController
 
-/**
- 提示选择框
 
- @param title          提示标题
- @param message        提示说明
- @param menuArray      菜单title Array
- @param style          风格
- @param completed     完成回调
- */
-extern void ShowAlertView(NSString *title,NSString *message,NSArray *menuArray,UIAlertControllerStyle style,void(^completed)(NSInteger index));
+/// AlertView
+/// @param title 标题
+/// @param message 说明
+/// @param menuArray 菜单Array
+/// @param style 风格
+extern void ShowAlertView(NSString *title, NSString *message, NSArray *menuArray, UIAlertControllerStyle style, void (^completed)(NSInteger index));
 
+/// 自定义AlertView
+/// @param title 标题
+/// @param message 说明
+/// @param menuArray 菜单Array
+/// @param style 风格
+extern void ShowCustomAlertView(NSString *title, NSString *message, NSArray <UIAlertAction *>*menuArray, UIAlertControllerStyle style);
 
-/**
- 输入框
- 
- @param title            提示标题
- @param message          提示说明
- @param menuArray        菜单title Array
- @param placeholderArray 输入框占位符 Array
- @param completed        完成回调
- */
-extern void ShowTextFieldAlertView(NSString *title,NSString *message,NSArray *menuArray,NSArray *placeholderArray,void(^completed)(NSInteger index,NSArray <UITextField *>*inputArray));
+/// AlertView带输入框
+/// @param title 标题
+/// @param message 说明
+/// @param menuArray 菜单Array
+/// @param placeholderArray UITextField占位
+extern void ShowTextFieldAlertView(NSString *title, NSString *message, NSArray *menuArray, NSArray *placeholderArray, void (^completed)(NSInteger index, NSArray <UITextField *> *inputArray));
 
 @end
